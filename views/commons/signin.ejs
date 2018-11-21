@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <% include ../partials/header.ejs %>
+      <body>
+        <% include ../partials/nav.ejs %>
+
+<div class="container">
+  <div calss="col-sm-8 mx-auto">
+    <div class= "card card-body">
+      <h2 class="card-title"><%=title%></h2>
+    <form class="" action="/signin" method="post">
+
+      <div calss="form-group row">
+        <label calss="col-sm-3 col-form-label" for="email">Email address</label>
+            <div class="col-sm-9">
+           <input type="email" class="form-control" id="email" aria-dropeffect="eamilHelp" placeholder="Enter email">
+           </div>
+            </div>
+
+
+      <div calss="form-group row">
+           <label calss="col-sm-3 col-form-label" for="email">Password</label>
+        <div class="col-sm-9">
+           <input type="password" class="form-control" id="password" aria-dropeffect="password" placeholder="Enter password">
+        </div>
+      </div>
+
+      <div calss="form-group row">
+          <div class="col-sm-9">
+          <input class="btn btn-lg btn-primary btn-block" type="submit"  value="Sign In">
+      </div>
+
+</form>
+     </div>
+   </div>
+        <% include ../partials/footer.ejs %>
+    </div>
+
+</body>
+      <% include ../partials/script.ejs %>
+</html>

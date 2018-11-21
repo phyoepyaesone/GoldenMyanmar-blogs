@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <% include ../partials/header.ejs %>
+    <title><%= title %></title>
+  <body>
+    <% include ../partials/nav.ejs %>
+
+<div class="container">
+  <div calss="col-sm-9 mx-auto">
+  <div class= "card card-body">
+      <h2 class="card-title"><%=title%></h2>
+      <form class="" action="/signup" method="post">
+
+      <div calss="form-group row">
+        <label calss="col-sm-3 col-form-label" for="email">Email address</label>
+           <div class="col-sm-25">
+           <input type="email" class="form-control" id="eamil" aria-dropeffect="eamilHelp" placeholder="Enter email" required>
+          </div>
+        </div>
+
+          <div calss="form-group row">
+           <label calss="col-sm-3 col-form-label" for="email">Password</label>
+           <div class="col-sm-25">
+           <input type="password" class="form-control" id="password" aria-dropeffect="password" placeholder="Enter password" required>
+         </div>
+       </div>
+
+
+         <div calss="form-group row">
+         <label calss="col-sm-3 col-form-label" for="email">Confirm Password</label>
+          <div class="col-sm-25">
+         <input type="password" class="form-control" id="cpassword" aria-dropeffect="cpassword" placeholder="Enter Repassword">
+       </div>
+     </div>
+
+
+      <div calss="form-group row">
+       <label calss="col-sm-3 col-form-label" for="question">Security Question</label>
+       <div class="col-sm-25">
+         <select class="form-control input-lg" id="question" required>
+           <option value="">Select Question</option>
+           <option value="">what was your childhood nickname?</option>
+           <option value="">what was your childhood nickname?</option>
+           <option value="">what was your childhood nickname?</option>
+           <option value="">what was your childhood nickname?</option>
+           <option value="">what was your childhood nickname?</option>
+         </select>
+     </div>
+   </div>
+
+  <div calss="form-group row">
+      <label calss="col-sm-2 col-form-label" for="question">Security Answer</label>
+      <div class="col-sm-25">
+      <input type="form-control input-lg" placeholder="Security answer" id="answer" name="answer" value="" type="text" >
+    </div>
+  </div>
+
+  <div calss="form-group row">
+        <label class="small">
+        <input type="checkbox" name="terms">Remember <a href="#">terms of service</a>
+      </label>
+  </div>
+
+  <div calss="form-group row">
+    <div class="col-sm-25">
+    <input class="btn btn-lg btn-primary btn-block" type="submit"  value="Sign Up">
+    </div>
+  </div>
+
+</form>
+</div>
+</div>
+</div>
+      <% include ../partials/footer.ejs %>
+</body>
+      <% include ../partials/script.ejs %>
+
+</html>
